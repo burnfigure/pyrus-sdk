@@ -13,7 +13,6 @@
     }
   ],
   "require": {
-    "php": "^8.x",
     "ext-curl": "*",
     "guzzlehttp/guzzle": "^7.5"
   },
