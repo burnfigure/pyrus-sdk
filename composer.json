@@ -1,8 +1,8 @@
 {
   "name": "burnfigure/pyrus-sdk",
-  "description": "Pyrus SDK client",
+  "description": "Pyrus SDK PHP-client",
   "keywords": [
-    "Client", "api", "sdk", "client"
+    "Client", "api", "sdk", "client", "php"
   ],
   "license": "MIT",
   "authors": [
