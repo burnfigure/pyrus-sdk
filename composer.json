@@ -1,0 +1,25 @@
+{
+  "name": "burnfigure/pyrus-sdk",
+  "description": "Pyrus SDK client",
+  "keywords": [
+    "Client", "api", "sdk", "client"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Vladimir Nikitin",
+      "email": "burnfigure@gmail.com"
+    }
+  ],
+  "require": {
+    "ext-curl": "*",
+    "guzzlehttp/guzzle": "^7.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Pyrus\\": "src",
+      "Pyrus\\Library\\": "src/Library",
+      "Pyrus\\Entities\\": "src/Entities"
+    }
+  }
+}
