@@ -1,6 +1,7 @@
 {
   "name": "burnfigure/pyrus-sdk",
   "description": "Pyrus SDK PHP-client",
+  "version": "1.0",
   "keywords": [
     "pyrus", "api", "sdk", "client", "php"
   ],
@@ -12,6 +13,7 @@
     }
   ],
   "require": {
+    "php": "^8.x",
     "ext-curl": "*",
     "guzzlehttp/guzzle": "^7.5"
   },
