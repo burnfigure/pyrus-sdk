@@ -14,4 +14,10 @@ class Catalogs
         return $this->pyrus->get($path);
     }
 
+    public function updateCatalog(int $catalog_id, $data)
+    {
+        $path = "catalogs/{$catalog_id}";
+        return $this->pyrus->post($path, $data);
+    }
+
 }

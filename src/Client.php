@@ -4,6 +4,7 @@ namespace Pyrus;
 use Pyrus\Entities\Catalogs;
 use Pyrus\Entities\Comments;
 use Pyrus\Entities\Files;
+use Pyrus\Entities\Forms;
 use Pyrus\Entities\Members;
 use Pyrus\Entities\Tasks;
 
@@ -14,6 +15,7 @@ class Client
     private Files $files;
     private Catalogs $catalogs;
     private Members $members;
+    private Forms $forms;
 
     public function __get(string $name)
     {

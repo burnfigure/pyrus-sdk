@@ -5,6 +5,7 @@ namespace Pyrus;
 use Pyrus\Entities\Catalogs;
 use Pyrus\Entities\Comments;
 use Pyrus\Entities\Files;
+use Pyrus\Entities\Forms;
 use Pyrus\Entities\Members;
 use Pyrus\Entities\Tasks;
 use Pyrus\Library\Pyrus;
@@ -16,7 +17,8 @@ class Factory
         'comments' => Comments::class,
         'files' => Files::class,
         'catalogs' => Catalogs::class,
-        'members' => Members::class
+        'members' => Members::class,
+        'forms' => Forms::class
     ];
 
     private static function initPyrus($bot_login, $bot_secret): Pyrus
