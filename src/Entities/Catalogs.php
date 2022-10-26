@@ -2,22 +2,14 @@
 
 namespace Pyrus\Entities;
 
+use Pyrus\Abstracts\Entity;
+use Pyrus\Interfaces\EntityInterface;
 use Pyrus\Library\Pyrus;
+use Pyrus\Traits\CatalogsTrait;
 
-class Catalogs
+class Catalogs extends Entity implements EntityInterface
 {
+    use CatalogsTrait;
+
     public function __construct(private Pyrus $pyrus){}
-
-    public function getCatalog(int $catalog_id)
-    {
-        $path = "catalogs/{$catalog_id}";
-        return $this->pyrus->get($path);
-    }
-
-    public function updateCatalog(int $catalog_id, $data)
-    {
-        $path = "catalogs/{$catalog_id}";
-        return $this->pyrus->post($path, $data);
-    }
-
 }

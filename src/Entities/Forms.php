@@ -2,15 +2,14 @@
 
 namespace Pyrus\Entities;
 
+use Pyrus\Abstracts\Entity;
+use Pyrus\Interfaces\EntityInterface;
 use Pyrus\Library\Pyrus;
+use Pyrus\Traits\FormsTrait;
 
-class Forms
+class Forms extends Entity implements EntityInterface
 {
-    public function __construct(private Pyrus $pyrus){}
+    use FormsTrait;
 
-    public function getForm(int $form_id)
-    {
-        $path = "forms/{$form_id}";
-        return $this->pyrus->get($path);
-    }
+    public function __construct(private Pyrus $pyrus){}
 }

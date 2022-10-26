@@ -2,15 +2,15 @@
 
 namespace Pyrus\Entities;
 
+use Pyrus\Abstracts\Entity;
+use Pyrus\Interfaces\EntityInterface;
 use Pyrus\Library\Pyrus;
+use Pyrus\Traits\CommentsTrait;
 
-class Comments
+class Comments extends Entity implements EntityInterface
 {
+    use CommentsTrait;
+
     public function __construct(private Pyrus $pyrus){}
 
-    public function addComment(int $task_id, array $comment_fields)
-    {
-        $path = "tasks/{$task_id}/comments";
-        return $this->pyrus->post($path, $comment_fields);
-    }
 }

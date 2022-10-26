@@ -2,15 +2,14 @@
 
 namespace Pyrus\Entities;
 
+use Pyrus\Abstracts\Entity;
+use Pyrus\Interfaces\EntityInterface;
 use Pyrus\Library\Pyrus;
+use Pyrus\Traits\MembersTrait;
 
-class Members
+class Members extends Entity implements EntityInterface
 {
-    public function __construct(private Pyrus $pyrus){}
+    use MembersTrait;
 
-    public function getMembers()
-    {
-        $path = "members";
-        return $this->pyrus->get($path);
-    }
+    public function __construct(private Pyrus $pyrus){}
 }
