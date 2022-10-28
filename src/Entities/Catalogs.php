@@ -13,3 +13,5 @@ class Catalogs extends Entity implements EntityInterface
 
     public function __construct(private Pyrus $pyrus){}
 }
+
+

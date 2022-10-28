@@ -21,7 +21,10 @@
     "psr-4": {
       "Pyrus\\": "src",
       "Pyrus\\Library\\": "src/Library",
-      "Pyrus\\Entities\\": "src/Entities"
+      "Pyrus\\Entities\\": "src/Entities",
+      "Pyrus\\Abstracts\\": "src/Abstracts",
+      "Pyrus\\Interfaces\\": "src/Interfaces",
+      "Pyrus\\Traits\\": "src/Traits"
     }
   }
 }

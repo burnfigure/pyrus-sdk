@@ -2,7 +2,6 @@
 
 namespace Pyrus\Traits;
 
-use Pyrus\Interfaces\CallbackInterface;
 
 trait TasksTrait
 {
