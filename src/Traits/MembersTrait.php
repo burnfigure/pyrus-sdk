@@ -4,10 +4,10 @@ namespace Pyrus\Traits;
 
 trait MembersTrait
 {
-    public function getMembers(?string $callback_class = null): ?array
+    public function getMembers(callable $callback = null): ?array
     {
         $path = "members";
         $this->response = $this->pyrus->get($path);
-        return $this->getResponse($callback_class);
+        return $this->getResponse($callback);
     }
 }

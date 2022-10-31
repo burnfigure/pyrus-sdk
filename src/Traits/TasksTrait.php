@@ -5,23 +5,23 @@ namespace Pyrus\Traits;
 
 trait TasksTrait
 {
-    public function getTasks(int $form_id, array $criteria, ?string $callback_class = null): array
+    public function getTasks(int $form_id, array $criteria, callable $callback = null): array
     {
         $path = "forms/{$form_id}/register?".http_build_query($criteria);
         $this->response =  $this->pyrus->get($path);
 
-        return $this->getResponse($callback_class);
+        return $this->getResponse($callback);
     }
 
-    public function getTask(int $task_id, ?string $callback_class = null): array
+    public function getTask(int $task_id, callable $callback = null): array
     {
         $path = "tasks/{$task_id}";
         $this->response = $this->pyrus->get($path);
 
-        return $this->getResponse($callback_class);
+        return $this->getResponse($callback);
     }
 
-    public function createTask($form_id, $fields, ?string $callback_class = null): array
+    public function createTask($form_id, $fields, callable $callback = null): array
     {
         $path = "tasks";
 
@@ -30,6 +30,6 @@ trait TasksTrait
             'fields' => $fields
         ]);
 
-        return $this->getResponse($callback_class);
+        return $this->getResponse($callback);
     }
 }
