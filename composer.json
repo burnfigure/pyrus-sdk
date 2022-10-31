@@ -1,7 +1,7 @@
 {
   "name": "burnfigure/pyrus-sdk",
   "description": "Pyrus SDK PHP-client",
-  "version": "1.1",
+  "version": "1.1.0",
   "keywords": [
     "pyrus", "api", "sdk", "client", "php"
   ],
